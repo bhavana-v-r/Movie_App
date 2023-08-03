@@ -38,9 +38,8 @@ def load_data():
 tfidf = load_data()
 
 with open("movie_list_small.pickle", "rb") as f:
-movies = pickle.load(f)
-
-dataframe = None
+    movies = pickle.load(f)
+    dataframe = None
 
 st.title("""
 Netflix Recommendation System
